@@ -39,3 +39,6 @@ rails generate graphql:install
 
 #install the webpacker
 rails webpacker:install
+
+#command for generate type
+rails g graphql:object user
