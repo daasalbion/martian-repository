@@ -30,3 +30,12 @@ docker-compose up -d
 
 #generate data in the database
 rails db:migrate db:seed
+
+# First, add it to the Gemfile
+bundle add graphql --version="~> 1.9"
+
+# Then, run the generator
+rails generate graphql:install
+
+#install the webpacker
+rails webpacker:install
