@@ -29,6 +29,16 @@ services:
     networks:
       - postgres
     restart: unless-stopped
+  web:
+    container_name: martin-library
+    build: .
+    command: bash -c "bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/myapp
+    ports:
+      - "3000:3000"
+    networks:
+      - postgres
 
 networks:
   postgres:
