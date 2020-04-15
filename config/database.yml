@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: postgres
-  url: postgres://postgres:changeme@localhost/postgres
+  url: postgres://postgres:changeme@martiandb/postgres
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,8 +81,10 @@ test:
 #
 production:
   <<: *default
-  database: postgres_container
+  database: postgres
+  url: postgres://postgres:changeme@martiandb/postgres
   username: postgres
   password: changeme
+  port: 5432
   #password: <%= ENV['MARTIAN_LIBRARY_DATABASE_PASSWORD'] %>
 
