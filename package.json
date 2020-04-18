@@ -5,7 +5,16 @@
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.2.2"
+    "@rails/webpacker": "4.2.2",
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.8",
+    "apollo-link": "^1.2.14",
+    "apollo-link-error": "^1.1.13",
+    "apollo-link-http": "^1.5.17",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^16.13.1"
   },
   "version": "0.1.0",
   "devDependencies": {
